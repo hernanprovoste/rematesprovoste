@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'admin' => 'admin#home' 
+
   resources :events
   get '/pages/*page' => 'pages#show'
 
